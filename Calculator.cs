@@ -15,4 +15,14 @@ namespace Fixtures
             return Foo * 2 + Bar + 1;
         }
     }
+
+    public class AnotherExample
+    {
+        public string Something { get; set; }
+        public string CompletelyDifferent { get; set; }
+        public string Message()
+        {
+            return string.Format("Hello, {0} and {1}", Something, CompletelyDifferent);
+        }
+    }
 }
